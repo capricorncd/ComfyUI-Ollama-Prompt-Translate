@@ -1,13 +1,7 @@
 # -*- coding: utf-8 -*-
-from .nodes import (
-    NODE_CLASS_MAPPINGS,
-    NODE_DISPLAY_NAME_MAPPINGS,
-    get_ollama_models,
-)
+from .nodes import get_ollama_models, NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
 
-WEB_DIRECTORY = "./web"
-__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS", "WEB_DIRECTORY"]
-
+__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
 
 def add_ollama_routes():
     """注册供前端「刷新模型列表」使用的 API。"""
